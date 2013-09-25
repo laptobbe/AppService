@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		F625DEB517F2AFA700C682AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB417F2AFA700C682AF /* Foundation.framework */; };
 		F625DEBA17F2AFA700C682AF /* AppService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F625DEB917F2AFA700C682AF /* AppService.h */; };
-		F625DEBC17F2AFA700C682AF /* AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEBB17F2AFA700C682AF /* AppService.m */; };
 		F625DEC317F2AFA700C682AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEC217F2AFA700C682AF /* XCTest.framework */; };
 		F625DEC417F2AFA700C682AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB417F2AFA700C682AF /* Foundation.framework */; };
 		F625DEC617F2AFA700C682AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEC517F2AFA700C682AF /* UIKit.framework */; };
 		F625DEC917F2AFA700C682AF /* libAppService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB117F2AFA700C682AF /* libAppService.a */; };
 		F625DECF17F2AFA700C682AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F625DECD17F2AFA700C682AF /* InfoPlist.strings */; };
 		F625DED117F2AFA700C682AF /* AppServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DED017F2AFA700C682AF /* AppServiceTests.m */; };
+		F625DEDC17F2AFCD00C682AF /* TSQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEDB17F2AFCD00C682AF /* TSQueueController.m */; };
+		F625DEE217F2B2B500C682AF /* TSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEDF17F2B2B500C682AF /* TSRule.m */; };
+		F625DEE317F2B2B500C682AF /* TSSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEE117F2B2B500C682AF /* TSSchema.m */; };
+		F625DEE717F2B34000C682AF /* AppFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEE617F2B34000C682AF /* AppFlow.m */; };
+		F6C57D7B17F2C5CD007DC38B /* TSErrorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +50,23 @@
 		F625DEB417F2AFA700C682AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F625DEB817F2AFA700C682AF /* AppService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppService-Prefix.pch"; sourceTree = "<group>"; };
 		F625DEB917F2AFA700C682AF /* AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
-		F625DEBB17F2AFA700C682AF /* AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppService.m; sourceTree = "<group>"; };
 		F625DEC117F2AFA700C682AF /* AppServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F625DEC217F2AFA700C682AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F625DEC517F2AFA700C682AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F625DECC17F2AFA700C682AF /* AppServiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppServiceTests-Info.plist"; sourceTree = "<group>"; };
 		F625DECE17F2AFA700C682AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F625DED017F2AFA700C682AF /* AppServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppServiceTests.m; sourceTree = "<group>"; };
+		F625DEDA17F2AFCD00C682AF /* TSQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQueueController.h; sourceTree = "<group>"; };
+		F625DEDB17F2AFCD00C682AF /* TSQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQueueController.m; sourceTree = "<group>"; };
+		F625DEDD17F2B2B500C682AF /* TSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOperation.h; sourceTree = "<group>"; };
+		F625DEDE17F2B2B500C682AF /* TSRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRule.h; sourceTree = "<group>"; };
+		F625DEDF17F2B2B500C682AF /* TSRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRule.m; sourceTree = "<group>"; };
+		F625DEE017F2B2B500C682AF /* TSSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSchema.h; sourceTree = "<group>"; };
+		F625DEE117F2B2B500C682AF /* TSSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSchema.m; sourceTree = "<group>"; };
+		F625DEE517F2B34000C682AF /* AppFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFlow.h; sourceTree = "<group>"; };
+		F625DEE617F2B34000C682AF /* AppFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFlow.m; sourceTree = "<group>"; };
+		F6C57D7917F2C5CD007DC38B /* TSErrorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSErrorOperation.h; sourceTree = "<group>"; };
+		F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSErrorOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +124,16 @@
 		F625DEB617F2AFA700C682AF /* AppService */ = {
 			isa = PBXGroup;
 			children = (
+				F625DEE417F2B2BC00C682AF /* Operations */,
 				F625DEB917F2AFA700C682AF /* AppService.h */,
-				F625DEBB17F2AFA700C682AF /* AppService.m */,
+				F625DEE517F2B34000C682AF /* AppFlow.h */,
+				F625DEE617F2B34000C682AF /* AppFlow.m */,
+				F625DEDA17F2AFCD00C682AF /* TSQueueController.h */,
+				F625DEDB17F2AFCD00C682AF /* TSQueueController.m */,
+				F625DEDE17F2B2B500C682AF /* TSRule.h */,
+				F625DEDF17F2B2B500C682AF /* TSRule.m */,
+				F625DEE017F2B2B500C682AF /* TSSchema.h */,
+				F625DEE117F2B2B500C682AF /* TSSchema.m */,
 				F625DEB717F2AFA700C682AF /* Supporting Files */,
 			);
 			path = AppService;
@@ -141,6 +163,16 @@
 				F625DECD17F2AFA700C682AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F625DEE417F2B2BC00C682AF /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				F625DEDD17F2B2B500C682AF /* TSOperation.h */,
+				F6C57D7917F2C5CD007DC38B /* TSErrorOperation.h */,
+				F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */,
+			);
+			name = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F625DEBC17F2AFA700C682AF /* AppService.m in Sources */,
+				F6C57D7B17F2C5CD007DC38B /* TSErrorOperation.m in Sources */,
+				F625DEE217F2B2B500C682AF /* TSRule.m in Sources */,
+				F625DEE717F2B34000C682AF /* AppFlow.m in Sources */,
+				F625DEE317F2B2B500C682AF /* TSSchema.m in Sources */,
+				F625DEDC17F2AFCD00C682AF /* TSQueueController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +445,7 @@
 				F625DED617F2AFA700C682AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F625DED717F2AFA700C682AF /* Build configuration list for PBXNativeTarget "AppServiceTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +454,7 @@
 				F625DED917F2AFA700C682AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

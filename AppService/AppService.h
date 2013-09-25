@@ -7,7 +7,5 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AppFlow.h"
 
-@interface AppService : NSObject
-
-@end
