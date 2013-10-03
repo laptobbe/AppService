@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TSSchema : NSObject
+@interface TSFlow : NSObject
 
 @property (nonatomic, strong) NSArray *rules;
 
-+ (TSSchema *)schema:(NSArray *)rules;
-+ (TSSchema *)startExecutingOnQueue:(NSOperationQueue *)startQueue withSchema:(NSArray *)rules;
-- (TSSchema *)startExecutingOnQueue:(NSOperationQueue *)startQueue;
++ (TSFlow *)flowWithRules:(NSArray *)rules;
++ (TSFlow *)startExecutingOnQueue:(NSOperationQueue *)startQueue withSchema:(NSArray *)rules;
+- (TSFlow *)startExecutingOnQueue:(NSOperationQueue *)startQueue;
 
 @end

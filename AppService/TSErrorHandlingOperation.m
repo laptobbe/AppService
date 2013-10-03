@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Computertalk. All rights reserved.
 //
 
-#import "TSErrorOperation.h"
+#import "TSErrorHandlingOperation.h"
 
-@implementation TSErrorOperation
+@implementation TSErrorHandlingOperation
 
 @synthesize success;
 @synthesize failiure;
@@ -25,8 +25,8 @@
     return self;
 }
 
-+ (TSErrorOperation *)operationWithBlock:(void (^)(NSError *error))block {
-    return [[TSErrorOperation alloc] initWithBlock:block];
++ (TSErrorHandlingOperation *)operationWithBlock:(void (^)(NSError *error))block {
+    return [[TSErrorHandlingOperation alloc] initWithBlock:block];
 }
 
 - (void)main {

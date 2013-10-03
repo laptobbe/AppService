@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Computertalk. All rights reserved.
 //
 
-#import "TSSchema.h"
+#import "TSFlow.h"
 #import "TSRule.h"
 
-@implementation TSSchema
+@implementation TSFlow
 
 - (id)initWithRules:(NSArray *)rules {
     self = [super init];
@@ -19,19 +19,19 @@
     return self;
 }
 
-- (TSSchema *)startExecutingOnQueue:(NSOperationQueue *)startQueue {
+- (TSFlow *)startExecutingOnQueue:(NSOperationQueue *)startQueue {
     [startQueue addOperation:[self.rules.firstObject when]];
     return self;
 }
 
-+ (TSSchema *)schema:(NSArray *)rules {
-    TSSchema *schema = [[TSSchema alloc] initWithRules:rules];
++ (TSFlow *)flowWithRules:(NSArray *)rules {
+    TSFlow *schema = [[TSFlow alloc] initWithRules:rules];
     [schema enforceRules];
     return schema;
 }
 
-+ (TSSchema *)startExecutingOnQueue:(NSOperationQueue *)startQueue withSchema:(NSArray *)rules {
-    TSSchema *schema = [TSSchema schema:rules];
++ (TSFlow *)startExecutingOnQueue:(NSOperationQueue *)startQueue withSchema:(NSArray *)rules {
+    TSFlow *schema = [TSFlow flowWithRules:rules];
     [schema startExecutingOnQueue:startQueue];
     return schema;
 }

@@ -11,9 +11,9 @@
 
 typedef void (^TSErrorBlock)(NSError *);
 
-@interface TSErrorOperation : NSOperation <TSOperation>
+@interface TSErrorHandlingOperation : NSOperation <TSOperation>
 
 @property (nonatomic, copy) TSErrorBlock block;
 
-+ (TSErrorOperation *)operationWithBlock:(void (^)(NSError *error))block;
++ (TSErrorHandlingOperation *)operationWithBlock:(void (^)(NSError *error))block;
 @end

@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61BC52317F40A41000B8C1A /* TSHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F61BC52217F40A41000B8C1A /* TSHTTPOperation.m */; };
+		F61BC52717F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61BC52617F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.m */; };
+		F620DD1517F613F9008023E6 /* TSCoreDataFetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F620DD1417F613F9008023E6 /* TSCoreDataFetchOperation.m */; };
+		F620DD1717F616BA008023E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F620DD1617F616BA008023E6 /* CoreData.framework */; };
+		F620DD1A17F61C65008023E6 /* TSCoreDataSaveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F620DD1917F61C65008023E6 /* TSCoreDataSaveOperation.m */; };
 		F625DEB517F2AFA700C682AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB417F2AFA700C682AF /* Foundation.framework */; };
-		F625DEBA17F2AFA700C682AF /* AppService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F625DEB917F2AFA700C682AF /* AppService.h */; };
+		F625DEBA17F2AFA700C682AF /* TSAppFlow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F625DEB917F2AFA700C682AF /* TSAppFlow.h */; };
 		F625DEC317F2AFA700C682AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEC217F2AFA700C682AF /* XCTest.framework */; };
 		F625DEC417F2AFA700C682AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB417F2AFA700C682AF /* Foundation.framework */; };
 		F625DEC617F2AFA700C682AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEC517F2AFA700C682AF /* UIKit.framework */; };
-		F625DEC917F2AFA700C682AF /* libAppService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB117F2AFA700C682AF /* libAppService.a */; };
+		F625DEC917F2AFA700C682AF /* libTSAppFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F625DEB117F2AFA700C682AF /* libTSAppFlow.a */; };
 		F625DECF17F2AFA700C682AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F625DECD17F2AFA700C682AF /* InfoPlist.strings */; };
 		F625DED117F2AFA700C682AF /* AppServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DED017F2AFA700C682AF /* AppServiceTests.m */; };
 		F625DEDC17F2AFCD00C682AF /* TSQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEDB17F2AFCD00C682AF /* TSQueueController.m */; };
 		F625DEE217F2B2B500C682AF /* TSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEDF17F2B2B500C682AF /* TSRule.m */; };
-		F625DEE317F2B2B500C682AF /* TSSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEE117F2B2B500C682AF /* TSSchema.m */; };
-		F625DEE717F2B34000C682AF /* AppFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEE617F2B34000C682AF /* AppFlow.m */; };
-		F6C57D7B17F2C5CD007DC38B /* TSErrorOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */; };
+		F625DEE317F2B2B500C682AF /* TSFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F625DEE117F2B2B500C682AF /* TSFlow.m */; };
+		F6C57D7B17F2C5CD007DC38B /* TSErrorHandlingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C57D7A17F2C5CD007DC38B /* TSErrorHandlingOperation.m */; };
+		F6E0572317F48C7C0088FB44 /* TSBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0572217F48C7C0088FB44 /* TSBlockOperation.m */; };
+		F6E0572C17F4931D0088FB44 /* TSCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0572717F4931D0088FB44 /* TSCoreData.m */; };
+		F6E0572D17F4931D0088FB44 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0572917F4931D0088FB44 /* CoreDataStack.m */; };
+		F6E0572E17F4931D0088FB44 /* NSManagedObjectContext+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0572B17F4931D0088FB44 /* NSManagedObjectContext+Convenience.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,21 +47,30 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				F625DEBA17F2AFA700C682AF /* AppService.h in CopyFiles */,
+				F625DEBA17F2AFA700C682AF /* TSAppFlow.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F625DEB117F2AFA700C682AF /* libAppService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61BC52117F40A41000B8C1A /* TSHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSHTTPOperation.h; sourceTree = "<group>"; };
+		F61BC52217F40A41000B8C1A /* TSHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSHTTPOperation.m; sourceTree = "<group>"; };
+		F61BC52517F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+TSAdditions.h"; sourceTree = "<group>"; };
+		F61BC52617F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+TSAdditions.m"; sourceTree = "<group>"; };
+		F620DD1317F613F9008023E6 /* TSCoreDataFetchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCoreDataFetchOperation.h; sourceTree = "<group>"; };
+		F620DD1417F613F9008023E6 /* TSCoreDataFetchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCoreDataFetchOperation.m; sourceTree = "<group>"; };
+		F620DD1617F616BA008023E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F620DD1817F61C65008023E6 /* TSCoreDataSaveOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCoreDataSaveOperation.h; sourceTree = "<group>"; };
+		F620DD1917F61C65008023E6 /* TSCoreDataSaveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCoreDataSaveOperation.m; sourceTree = "<group>"; };
+		F625DEB117F2AFA700C682AF /* libTSAppFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTSAppFlow.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F625DEB417F2AFA700C682AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F625DEB817F2AFA700C682AF /* AppService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppService-Prefix.pch"; sourceTree = "<group>"; };
-		F625DEB917F2AFA700C682AF /* AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppService.h; sourceTree = "<group>"; };
-		F625DEC117F2AFA700C682AF /* AppServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F625DEB817F2AFA700C682AF /* TSAppFlow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSAppFlow-Prefix.pch"; sourceTree = "<group>"; };
+		F625DEB917F2AFA700C682AF /* TSAppFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppFlow.h; sourceTree = "<group>"; };
+		F625DEC117F2AFA700C682AF /* TSAppFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSAppFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F625DEC217F2AFA700C682AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F625DEC517F2AFA700C682AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F625DECC17F2AFA700C682AF /* AppServiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppServiceTests-Info.plist"; sourceTree = "<group>"; };
+		F625DECC17F2AFA700C682AF /* TSAppFlowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSAppFlowTests-Info.plist"; sourceTree = "<group>"; };
 		F625DECE17F2AFA700C682AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F625DED017F2AFA700C682AF /* AppServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppServiceTests.m; sourceTree = "<group>"; };
 		F625DEDA17F2AFCD00C682AF /* TSQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQueueController.h; sourceTree = "<group>"; };
@@ -61,12 +78,18 @@
 		F625DEDD17F2B2B500C682AF /* TSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSOperation.h; sourceTree = "<group>"; };
 		F625DEDE17F2B2B500C682AF /* TSRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRule.h; sourceTree = "<group>"; };
 		F625DEDF17F2B2B500C682AF /* TSRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRule.m; sourceTree = "<group>"; };
-		F625DEE017F2B2B500C682AF /* TSSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSchema.h; sourceTree = "<group>"; };
-		F625DEE117F2B2B500C682AF /* TSSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSchema.m; sourceTree = "<group>"; };
-		F625DEE517F2B34000C682AF /* AppFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFlow.h; sourceTree = "<group>"; };
-		F625DEE617F2B34000C682AF /* AppFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFlow.m; sourceTree = "<group>"; };
-		F6C57D7917F2C5CD007DC38B /* TSErrorOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSErrorOperation.h; sourceTree = "<group>"; };
-		F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSErrorOperation.m; sourceTree = "<group>"; };
+		F625DEE017F2B2B500C682AF /* TSFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSFlow.h; sourceTree = "<group>"; };
+		F625DEE117F2B2B500C682AF /* TSFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSFlow.m; sourceTree = "<group>"; };
+		F6C57D7917F2C5CD007DC38B /* TSErrorHandlingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSErrorHandlingOperation.h; sourceTree = "<group>"; };
+		F6C57D7A17F2C5CD007DC38B /* TSErrorHandlingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSErrorHandlingOperation.m; sourceTree = "<group>"; };
+		F6E0572117F48C7C0088FB44 /* TSBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBlockOperation.h; sourceTree = "<group>"; };
+		F6E0572217F48C7C0088FB44 /* TSBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBlockOperation.m; sourceTree = "<group>"; };
+		F6E0572617F4931D0088FB44 /* TSCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCoreData.h; sourceTree = "<group>"; };
+		F6E0572717F4931D0088FB44 /* TSCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCoreData.m; sourceTree = "<group>"; };
+		F6E0572817F4931D0088FB44 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		F6E0572917F4931D0088FB44 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		F6E0572A17F4931D0088FB44 /* NSManagedObjectContext+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Convenience.h"; sourceTree = "<group>"; };
+		F6E0572B17F4931D0088FB44 /* NSManagedObjectContext+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Convenience.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F620DD1717F616BA008023E6 /* CoreData.framework in Frameworks */,
 				F625DEB517F2AFA700C682AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,18 +109,27 @@
 				F625DEC317F2AFA700C682AF /* XCTest.framework in Frameworks */,
 				F625DEC617F2AFA700C682AF /* UIKit.framework in Frameworks */,
 				F625DEC417F2AFA700C682AF /* Foundation.framework in Frameworks */,
-				F625DEC917F2AFA700C682AF /* libAppService.a in Frameworks */,
+				F625DEC917F2AFA700C682AF /* libTSAppFlow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61BC52417F40D1A000B8C1A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F61BC52517F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.h */,
+				F61BC52617F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		F625DEA817F2AFA700C682AF = {
 			isa = PBXGroup;
 			children = (
-				F625DEB617F2AFA700C682AF /* AppService */,
-				F625DECA17F2AFA700C682AF /* AppServiceTests */,
+				F625DEB617F2AFA700C682AF /* TSAppFlow */,
+				F625DECA17F2AFA700C682AF /* TSAppFlowTests */,
 				F625DEB317F2AFA700C682AF /* Frameworks */,
 				F625DEB217F2AFA700C682AF /* Products */,
 			);
@@ -105,8 +138,8 @@
 		F625DEB217F2AFA700C682AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F625DEB117F2AFA700C682AF /* libAppService.a */,
-				F625DEC117F2AFA700C682AF /* AppServiceTests.xctest */,
+				F625DEB117F2AFA700C682AF /* libTSAppFlow.a */,
+				F625DEC117F2AFA700C682AF /* TSAppFlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +147,7 @@
 		F625DEB317F2AFA700C682AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F620DD1617F616BA008023E6 /* CoreData.framework */,
 				F625DEB417F2AFA700C682AF /* Foundation.framework */,
 				F625DEC217F2AFA700C682AF /* XCTest.framework */,
 				F625DEC517F2AFA700C682AF /* UIKit.framework */,
@@ -121,45 +155,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F625DEB617F2AFA700C682AF /* AppService */ = {
+		F625DEB617F2AFA700C682AF /* TSAppFlow */ = {
 			isa = PBXGroup;
 			children = (
+				F625DEB917F2AFA700C682AF /* TSAppFlow.h */,
+				F6E0573017F4A4A00088FB44 /* Flow */,
+				F6E0572517F492210088FB44 /* Core Data */,
+				F6E0572417F4920E0088FB44 /* Network */,
 				F625DEE417F2B2BC00C682AF /* Operations */,
-				F625DEB917F2AFA700C682AF /* AppService.h */,
-				F625DEE517F2B34000C682AF /* AppFlow.h */,
-				F625DEE617F2B34000C682AF /* AppFlow.m */,
-				F625DEDA17F2AFCD00C682AF /* TSQueueController.h */,
-				F625DEDB17F2AFCD00C682AF /* TSQueueController.m */,
-				F625DEDE17F2B2B500C682AF /* TSRule.h */,
-				F625DEDF17F2B2B500C682AF /* TSRule.m */,
-				F625DEE017F2B2B500C682AF /* TSSchema.h */,
-				F625DEE117F2B2B500C682AF /* TSSchema.m */,
 				F625DEB717F2AFA700C682AF /* Supporting Files */,
 			);
+			name = TSAppFlow;
 			path = AppService;
 			sourceTree = "<group>";
 		};
 		F625DEB717F2AFA700C682AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F625DEB817F2AFA700C682AF /* AppService-Prefix.pch */,
+				F625DEB817F2AFA700C682AF /* TSAppFlow-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F625DECA17F2AFA700C682AF /* AppServiceTests */ = {
+		F625DECA17F2AFA700C682AF /* TSAppFlowTests */ = {
 			isa = PBXGroup;
 			children = (
 				F625DED017F2AFA700C682AF /* AppServiceTests.m */,
 				F625DECB17F2AFA700C682AF /* Supporting Files */,
 			);
+			name = TSAppFlowTests;
 			path = AppServiceTests;
 			sourceTree = "<group>";
 		};
 		F625DECB17F2AFA700C682AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F625DECC17F2AFA700C682AF /* AppServiceTests-Info.plist */,
+				F625DECC17F2AFA700C682AF /* TSAppFlowTests-Info.plist */,
 				F625DECD17F2AFA700C682AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -169,18 +200,68 @@
 			isa = PBXGroup;
 			children = (
 				F625DEDD17F2B2B500C682AF /* TSOperation.h */,
-				F6C57D7917F2C5CD007DC38B /* TSErrorOperation.h */,
-				F6C57D7A17F2C5CD007DC38B /* TSErrorOperation.m */,
+				F6C57D7917F2C5CD007DC38B /* TSErrorHandlingOperation.h */,
+				F6C57D7A17F2C5CD007DC38B /* TSErrorHandlingOperation.m */,
+				F61BC52117F40A41000B8C1A /* TSHTTPOperation.h */,
+				F61BC52217F40A41000B8C1A /* TSHTTPOperation.m */,
+				F6E0572117F48C7C0088FB44 /* TSBlockOperation.h */,
+				F6E0572217F48C7C0088FB44 /* TSBlockOperation.m */,
+				F620DD1317F613F9008023E6 /* TSCoreDataFetchOperation.h */,
+				F620DD1417F613F9008023E6 /* TSCoreDataFetchOperation.m */,
+				F620DD1817F61C65008023E6 /* TSCoreDataSaveOperation.h */,
+				F620DD1917F61C65008023E6 /* TSCoreDataSaveOperation.m */,
 			);
 			name = Operations;
+			sourceTree = "<group>";
+		};
+		F6E0572417F4920E0088FB44 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F61BC52417F40D1A000B8C1A /* Categories */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		F6E0572517F492210088FB44 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0572F17F4932C0088FB44 /* Categories */,
+				F6E0572617F4931D0088FB44 /* TSCoreData.h */,
+				F6E0572717F4931D0088FB44 /* TSCoreData.m */,
+				F6E0572817F4931D0088FB44 /* CoreDataStack.h */,
+				F6E0572917F4931D0088FB44 /* CoreDataStack.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		F6E0572F17F4932C0088FB44 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0572A17F4931D0088FB44 /* NSManagedObjectContext+Convenience.h */,
+				F6E0572B17F4931D0088FB44 /* NSManagedObjectContext+Convenience.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F6E0573017F4A4A00088FB44 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				F625DEDA17F2AFCD00C682AF /* TSQueueController.h */,
+				F625DEDB17F2AFCD00C682AF /* TSQueueController.m */,
+				F625DEDE17F2B2B500C682AF /* TSRule.h */,
+				F625DEDF17F2B2B500C682AF /* TSRule.m */,
+				F625DEE017F2B2B500C682AF /* TSFlow.h */,
+				F625DEE117F2B2B500C682AF /* TSFlow.m */,
+			);
+			name = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F625DEB017F2AFA700C682AF /* AppService */ = {
+		F625DEB017F2AFA700C682AF /* TSAppFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F625DED417F2AFA700C682AF /* Build configuration list for PBXNativeTarget "AppService" */;
+			buildConfigurationList = F625DED417F2AFA700C682AF /* Build configuration list for PBXNativeTarget "TSAppFlow" */;
 			buildPhases = (
 				F625DEAD17F2AFA700C682AF /* Sources */,
 				F625DEAE17F2AFA700C682AF /* Frameworks */,
@@ -190,14 +271,14 @@
 			);
 			dependencies = (
 			);
-			name = AppService;
+			name = TSAppFlow;
 			productName = AppService;
-			productReference = F625DEB117F2AFA700C682AF /* libAppService.a */;
+			productReference = F625DEB117F2AFA700C682AF /* libTSAppFlow.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F625DEC017F2AFA700C682AF /* AppServiceTests */ = {
+		F625DEC017F2AFA700C682AF /* TSAppFlowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F625DED717F2AFA700C682AF /* Build configuration list for PBXNativeTarget "AppServiceTests" */;
+			buildConfigurationList = F625DED717F2AFA700C682AF /* Build configuration list for PBXNativeTarget "TSAppFlowTests" */;
 			buildPhases = (
 				F625DEBD17F2AFA700C682AF /* Sources */,
 				F625DEBE17F2AFA700C682AF /* Frameworks */,
@@ -208,9 +289,9 @@
 			dependencies = (
 				F625DEC817F2AFA700C682AF /* PBXTargetDependency */,
 			);
-			name = AppServiceTests;
+			name = TSAppFlowTests;
 			productName = AppServiceTests;
-			productReference = F625DEC117F2AFA700C682AF /* AppServiceTests.xctest */;
+			productReference = F625DEC117F2AFA700C682AF /* TSAppFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +303,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Computertalk;
 			};
-			buildConfigurationList = F625DEAC17F2AFA700C682AF /* Build configuration list for PBXProject "AppService" */;
+			buildConfigurationList = F625DEAC17F2AFA700C682AF /* Build configuration list for PBXProject "TSAppFlow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,8 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F625DEB017F2AFA700C682AF /* AppService */,
-				F625DEC017F2AFA700C682AF /* AppServiceTests */,
+				F625DEB017F2AFA700C682AF /* TSAppFlow */,
+				F625DEC017F2AFA700C682AF /* TSAppFlowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,11 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6C57D7B17F2C5CD007DC38B /* TSErrorOperation.m in Sources */,
+				F620DD1517F613F9008023E6 /* TSCoreDataFetchOperation.m in Sources */,
+				F6C57D7B17F2C5CD007DC38B /* TSErrorHandlingOperation.m in Sources */,
+				F620DD1A17F61C65008023E6 /* TSCoreDataSaveOperation.m in Sources */,
+				F6E0572C17F4931D0088FB44 /* TSCoreData.m in Sources */,
 				F625DEE217F2B2B500C682AF /* TSRule.m in Sources */,
-				F625DEE717F2B34000C682AF /* AppFlow.m in Sources */,
-				F625DEE317F2B2B500C682AF /* TSSchema.m in Sources */,
+				F6E0572E17F4931D0088FB44 /* NSManagedObjectContext+Convenience.m in Sources */,
+				F625DEE317F2B2B500C682AF /* TSFlow.m in Sources */,
 				F625DEDC17F2AFCD00C682AF /* TSQueueController.m in Sources */,
+				F61BC52717F40DAA000B8C1A /* NSHTTPURLResponse+TSAdditions.m in Sources */,
+				F61BC52317F40A41000B8C1A /* TSHTTPOperation.m in Sources */,
+				F6E0572317F48C7C0088FB44 /* TSBlockOperation.m in Sources */,
+				F6E0572D17F4931D0088FB44 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +365,7 @@
 /* Begin PBXTargetDependency section */
 		F625DEC817F2AFA700C682AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F625DEB017F2AFA700C682AF /* AppService */;
+			target = F625DEB017F2AFA700C682AF /* TSAppFlow */;
 			targetProxy = F625DEC717F2AFA700C682AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -369,9 +457,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/AppService.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppService/AppService-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AppService/TSAppFlow-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = TSAppFlow;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -381,9 +469,9 @@
 			buildSettings = {
 				DSTROOT = /tmp/AppService.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppService/AppService-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AppService/TSAppFlow-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = TSAppFlow;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -403,8 +491,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "AppServiceTests/AppServiceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AppServiceTests/TSAppFlowTests-Info.plist";
+				PRODUCT_NAME = TSAppFlowTests;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -420,8 +508,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppService/AppService-Prefix.pch";
-				INFOPLIST_FILE = "AppServiceTests/AppServiceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AppServiceTests/TSAppFlowTests-Info.plist";
+				PRODUCT_NAME = TSAppFlowTests;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -429,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F625DEAC17F2AFA700C682AF /* Build configuration list for PBXProject "AppService" */ = {
+		F625DEAC17F2AFA700C682AF /* Build configuration list for PBXProject "TSAppFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F625DED217F2AFA700C682AF /* Debug */,
@@ -438,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F625DED417F2AFA700C682AF /* Build configuration list for PBXNativeTarget "AppService" */ = {
+		F625DED417F2AFA700C682AF /* Build configuration list for PBXNativeTarget "TSAppFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F625DED517F2AFA700C682AF /* Debug */,
@@ -447,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F625DED717F2AFA700C682AF /* Build configuration list for PBXNativeTarget "AppServiceTests" */ = {
+		F625DED717F2AFA700C682AF /* Build configuration list for PBXNativeTarget "TSAppFlowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F625DED817F2AFA700C682AF /* Debug */,
