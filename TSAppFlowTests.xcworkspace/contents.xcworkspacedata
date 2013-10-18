@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:TSAppFlow"
+      name = "TSAppFlow">
+      <FileRef
+         location = "group:TSAppFlow.h">
+      </FileRef>
+      <Group
+         location = "group:Core Data"
+         name = "Core Data">
+         <FileRef
+            location = "group:CoreDataStack.h">
+         </FileRef>
+         <FileRef
+            location = "group:CoreDataStack.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObjectContext+Convenience.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObjectContext+Convenience.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreData.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreData.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Flow"
+         name = "Flow">
+         <FileRef
+            location = "group:TSFlow.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSFlow.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSQueueController.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSQueueController.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSRule.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSRule.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Operations"
+         name = "Operations">
+         <FileRef
+            location = "group:TSBlockOperation.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSBlockOperation.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreDataFetchOperation.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreDataFetchOperation.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreDataSaveOperation.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSCoreDataSaveOperation.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSErrorHandlingOperation.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSErrorHandlingOperation.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSHTTPOperation.h">
+         </FileRef>
+         <FileRef
+            location = "group:TSHTTPOperation.m">
+         </FileRef>
+         <FileRef
+            location = "group:TSOperation.h">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:TSAppFlowMacExample/TSAppFlowMacExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TSAppFlowExampleiOS/TSAppFlowExampleiOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TSAppFlowTests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
