@@ -1,3 +1,5 @@
+xcodeproj 'TSAppFlow/TSAppFlow.xcodeproj'
+
 platform :ios, "6.0"
 
     pod "libextobjc"

@@ -7,7 +7,6 @@
 //
 
 #import "TSHTTPOperation.h"
-#import "NSHTTPURLResponse+TSAdditions.h"
 #import "TSQueueController.h"
 #import <libextobjc/EXTScope.h>
 
@@ -21,6 +20,7 @@
 
 - (id)initWithRequest:(NSURLRequest *)urlRequest {
     NSParameterAssert(urlRequest);
+    
     self = [super initWithRequest:urlRequest];
     if (self) {
         @weakify(self);
